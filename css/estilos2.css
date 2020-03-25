@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Baloo+2|Oswald|Poppins|Sen&display=swap');
+h2 {
+    font-family: 'Anton', sans-serif;
+    color: #512b58;
+    font-size: 2.3rem;
+}

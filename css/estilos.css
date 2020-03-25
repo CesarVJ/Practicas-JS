@@ -1,0 +1,34 @@
+form input[type='button'] {
+    background-color: #116979;
+    color: #fff;
+    width: 20%;
+    height: 10%;
+    cursor: pointer;
+}
+
+body {
+    text-align: center;
+}
+
+form input[type='button']:hover {
+    width: 19%;
+    height: 9%;
+    background-color: #18b0b0;
+}
+
+form {
+    text-align: center;
+}
+
+input[type='submit'] {
+    background-color: #116979;
+    color: #fff;
+    width: 15%;
+    height: 5%;
+    margin-top: 15px;
+}
+
+#tabla,
+#contenido {
+    text-align: center;
+}
