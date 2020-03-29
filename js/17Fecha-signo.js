@@ -57,10 +57,16 @@ function validaFecha(valor) {
     }
     return dConvertida;
 }
+var newDiv
 
 function creasigno(nDia, nMes) {
 
-    var newDiv = document.createElement("div");
+    if (newDiv == null) {
+        newDiv = document.createElement("div");
+    } else {
+        document.getElementById("div").innerHTML = '';
+    }
+
     var numSuerte;
     var colorRepresentativo;
     if ((nDia > 20) && (nMes == 3) || (nDia <= 20) && (nMes == 4)) {
@@ -124,8 +130,12 @@ function creasigno(nDia, nMes) {
 
     // añade el elemento creado y su contenido al DOM
     var currentDiv = document.getElementById("div");
-    document.body.insertBefore(newDiv, currentDiv);
+    if (currentDiv == null) {
+        document.body.insertBefore(newDiv, currentDiv);
+    }
     newDiv.style = `border: 3px solid #999999; background-color:${colorRepresentativo}; width: 200px ;height:300px; display:inline-block; margin:10px; `;
+    newDiv.setAttribute('id', 'div');
+
 
 
 }
